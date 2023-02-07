@@ -22,7 +22,7 @@ def send_reset_email(user):
 def send_notification(user_email, order_id, price):
     send_mail(
         'Уведомление о создании заказа!',
-        f"""Вы создали заказ №{order_id}, \n полная стоимость вашего zakaza: {price}. \nsposibo za to chto vibraly nas!""",
+        f"""Вы создали заказ №{order_id}, \n полная стоимость вашего заказа: {price}. \nспасибо за то что выбрали нас!""",
         'from@example.com',
         [user_email],
         fail_silently=False
